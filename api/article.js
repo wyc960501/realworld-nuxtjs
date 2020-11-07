@@ -91,7 +91,6 @@ export const deleteArticle = slug => {
 
 // 编辑文章
 export const editArticle = (slug, data) => {
-  console.log(slug, data)
   return request({
     method: 'PUT',
     url: `/api/articles/${slug}`,
